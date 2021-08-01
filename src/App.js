@@ -6,8 +6,8 @@ import Layout from './layout/Layout'
 
 // pages
 import Home from './pages/Home'
-import About from './pages/About'
 import NotFound from './pages/NotFound'
+import Documentation from './pages/Documentation'
 
 const App = () => {
   return (
@@ -15,7 +15,7 @@ const App = () => {
       <Container>
         <Switch>
           <Route path='/' component={Home} exact />
-          <Route path='/about' component={About} />
+          <Route path='/documentation' component={Documentation} />
           <Route component={NotFound} />
         </Switch>
       </Container>
